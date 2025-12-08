@@ -37,7 +37,7 @@ let quotes = [
     timePrep: "30 min",
     timeCook: "12 min",
     numberPeople: "2 people",
-    photo: "img/pizza.JPG",
+    photo: "./img/pizza.JPG",
     rating: "4.7",
     review: "(389 reviews)",
     recipes: `<ol class="m-0 ingredients-list">
@@ -297,7 +297,7 @@ let quotes = [
     timePrep: "20 min",
     timeCook: "20 min",
     numberPeople: "4 people",
-    photo: "img/pasta.jpg",
+    photo: "./img/pasta.jpg",
     rating: "4.6",
     review: "(275 reviews)",
     recipes: `<ol class="m-0 ingredients-list">
@@ -362,7 +362,7 @@ let quotes = [
     timePrep: "10 min",
     timeCook: "0 min",
     numberPeople: "2 people",
-    photo: "img/salad.jpg",
+    photo: "./img/salad.jpg",
     rating: "4.3",
     review: "(210 reviews)",
     recipes: `<ol class="m-0 ingredients-list">
@@ -623,7 +623,7 @@ let quotes = [
     timePrep: "15 min",
     timeCook: "10 min",
     numberPeople: "3 people",
-    photo: "img/veggie.jpg",
+    photo: "./img/veggie.jpg",
     rating: "4.5",
     review: "(220 reviews)",
     recipes: `<ol class="m-0 ingredients-list">
