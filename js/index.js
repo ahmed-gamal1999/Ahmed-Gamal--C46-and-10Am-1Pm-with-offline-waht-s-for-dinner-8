@@ -167,7 +167,7 @@ let quotes = [
     timePrep: "25 min",
     timeCook: "15 min",
     numberPeople: "3 people",
-    photo: "img/shawrma.jpeg",
+    photo: "./img/shawrma.JPEG",
     rating: "4.8",
     review: "(510 reviews)",
     recipes: `<ol class="m-0 ingredients-list">
