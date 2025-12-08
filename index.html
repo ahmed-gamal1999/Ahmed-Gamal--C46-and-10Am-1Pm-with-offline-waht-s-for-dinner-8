@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="ar">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Recipe UI Ahmed Gamal</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
+    />
+    <link rel="stylesheet" href="css/bootstrap.min.css" />
+    <link rel="stylesheet" href="css/all.css" />
+    <link rel="icon" type="image/png" href="img/cropped-favicon.png" />
+  </head>
+  <body>
+    <header>
+      <nav class="shadow-sm p-2">
+        <div class="d-flex justify-content-between align-items-center">
+          <div class="d-flex handlebreak align-items-center">
+            <div class="m-2">
+              <i class="fa-solid fa-utensils navIcon"></i>
+            </div>
+            <div>
+              <h4 class="navAddress fw-bold">What's For Dinner</h4>
+              <p class="navParagraph">Your daily meal inspiration</p>
+            </div>
+          </div>
+
+          <div class="navContentRight d-flex align-items-center">
+            <div class="icon-list d-flex align-items-center">
+              <i class="fa-solid fa-bookmark navIcons change-hide"></i>
+              <i class="fa-solid fa-clock-rotate-left navIcons change-hide"></i>
+              <i class="fa-solid fa-gear navIcons change-hide"></i>
+            </div>
+
+            <i
+              class="fa-solid fa-bars navIcons change-visible ms-2"
+              id="hamburger"
+            ></i>
+
+            <div class="align-content-center p-3">
+              <img src="img/avatar.jpg" class="navImage" alt="Model" />
+            </div>
+          </div>
+        </div>
+
+        <div class="mobile-menu d-none flex-column mt-2 ms-2" id="mobileMenu">
+          <i class="fa-solid fa-bookmark navIcons mb-2"></i>
+          <i class="fa-solid fa-clock-rotate-left navIcons mb-2"></i>
+          <i class="fa-solid fa-gear navIcons mb-2"></i>
+        </div>
+      </nav>
+    </header>
+
+    <section class="container mt-5 mb-5" id="section">
+      <div class="row g-0 recipe-card mohamed">
+        <div class="col-md-5 col-sm-12 position-relative">
+          <img
+            id="photoHero"
+            src="img/photo.jpg"
+            alt="Meal"
+            class="w-100 h-100 recipe-image"
+          />
+
+          <div class="rating-box d-flex align-items-center gap-2 rounded-4">
+            <i class="fa-solid fa-star text-warning"></i>
+            <h6 class="m-0 fw-bold fs-5" id="rating">4.9</h6>
+            <p class="m-0 small text-muted" id="review">(512 reviews)</p>
+          </div>
+
+          <div class="bottom-info d-flex justify-content-around rounded-4 py-3">
+            <div class="text-center">
+              <i class="fa-solid fa-clock fs-4"></i>
+              <p class="text-muted small m-0">Prep Time</p>
+              <h6 class="fw-bold" id="timePrep">90 min</h6>
+            </div>
+
+            <div class="text-center">
+              <i class="fa-solid fa-fire-burner fs-4 text-danger"></i>
+              <p class="text-muted small m-0">Cook Time</p>
+              <h6 class="fw-bold" id="timeCook">12 min</h6>
+            </div>
+
+            <div class="text-center">
+              <i class="fa-solid fa-people-group fs-4 text-primary"></i>
+              <p class="text-muted small m-0">Servings</p>
+              <h6 class="fw-bold" id="numberPeople">2 people</h6>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-7 col-12 p-4 bg-white right-panel">
+          <div class="d-flex gap-2 mb-3">
+            <span class="badge badge-level" id="badgeLevel">Intermediate</span>
+            <span class="badge badge-cuisine" id="badgeCuisine">Egyptian</span>
+          </div>
+
+          <div class="d-flex justify-content-between">
+            <div>
+              <h2 class="fw-bold" id="foodName">Koshari</h2>
+              <p class="text-muted" id="foodDesc">
+                Classic Egyptian koshari with rice, lentils, pasta, and spicy
+                tomato sauce
+              </p>
+            </div>
+
+            <div class="d-flex gap-3">
+              <i
+                class="fa-solid fa-bookmark icon-btn align-self-baseline fs-5"
+              ></i>
+              <i
+                class="fa-solid fa-share-nodes icon-btn align-self-baseline fs-5"
+              ></i>
+            </div>
+          </div>
+
+          <div class="tabs d-flex justify-content-evenly gap-4 mt-4">
+            <div
+              class="tab active"
+              id="ingredientsTabButton"
+              onclick="tabsSelect('ingredientsSelect')"
+            >
+              <i class="fa-solid fa-list"></i> Ingredients
+            </div>
+            <div
+              class="tab"
+              onclick="tabsSelect('instructionsSelect')"
+              id="instructionsTabButton"
+            >
+              <i class="fa-solid fa-book-open"></i> Instructions
+            </div>
+            <div
+              class="tab"
+              onclick="tabsSelect('nutritionSelect')"
+              id="nutritionTabButton"
+            >
+              <i class="fa-solid fa-chart-pie"></i> Nutrition
+            </div>
+            <div
+              class="tab"
+              id="ChefsTabButton"
+              onclick="tabsSelect('ChefsSelect')"
+            >
+              <i class="fa-solid fa-lightbulb"></i> Chef's Tips
+            </div>
+          </div>
+
+          <div class="lighn mb-3"></div>
+          <div id="ingredientBox" class="active rounded-4"></div>
+          <div id="instructionBox" class="d-none instruction-Box"></div>
+          <div id="nutritionBox" class="d-none"></div>
+          <div id="chefsBox" class="d-none"></div>
+          <button
+            onclick="generate()"
+            class="gradient-btn rounded-3 mt-5 d-flex gap-2"
+          >
+            <i class="fa-solid fa-arrow-rotate-right align-content-center"></i>
+            Try Another Recipe
+          </button>
+          <div class="lighn"></div>
+        </div>
+      </div>
+    </section>
+
+    <script src="js/index.js"></script>
+  </body>
+</html>

@@ -1,0 +1,59 @@
+.change-hide {
+  display: inline-block;
+}
+
+.change-visible {
+  display: none;
+}
+@media screen and (max-width: 630px) {
+  .tabs {
+    flex-direction: column;
+    justify-content: center;
+  }
+}
+
+@media (max-width: 620px) {
+  .tabs {
+    overflow-x: hidden;
+    white-space: nowrap;
+  }
+  .tabs .tab {
+    display: inline-block;
+    padding: 8px 12px;
+  }
+}
+@media screen and (max-width: 768px) {
+  .change-hide {
+    display: none;
+  }
+  nav {
+    width: 100%;
+  }
+  .change-visible {
+    display: inline-block;
+  }
+
+  .tab i {
+    align-self: center;
+  }
+  .tab {
+    display: flex;
+    flex-direction: column;
+  }
+  .navContentRight {
+    margin-right: 0px !important;
+  }
+  .handlebreak {
+    margin-left: 0px !important;
+  }
+  .navAddress {
+    font-size: 14px;
+  }
+  .navParagraph {
+    font-size: 10px;
+  }
+  .navIcon {
+    width: 42px;
+    height: 42px;
+  }
+}

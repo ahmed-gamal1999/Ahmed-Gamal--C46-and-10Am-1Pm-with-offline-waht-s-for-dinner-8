@@ -1,0 +1,442 @@
+html {
+  scroll-behavior: smooth;
+}
+
+#section {
+  max-width: 1230px;
+  width: 95%;
+  margin: auto;
+  min-height: 750px;
+}
+#recipes {
+  height: 300px;
+  overflow: auto;
+}
+
+.ingredients-box,
+.Instructions-box,
+.nutrition-box,
+.Chefs-box {
+  width: 99%;
+  margin: auto;
+}
+section::-webkit-scrollbar,
+#recipes::-webkit-scrollbar {
+  width: 7px;
+}
+
+section::-webkit-scrollbar-track,
+#recipes::-webkit-scrollbar-track {
+  background: #ffffff;
+  border-radius: 10px;
+}
+
+section::-webkit-scrollbar-thumb,
+#recipes::-webkit-scrollbar-thumb {
+  background: #ffd2d2;
+  border-radius: 10px;
+  transition: 0.3s;
+}
+
+section::-webkit-scrollbar-thumb:hover,
+#recipes::-webkit-scrollbar-thumb:hover {
+  background: #b46653;
+}
+
+:root {
+  --colorParent: #ff6900;
+}
+body {
+  background-color: #fff7db;
+  font-family: sans-serif;
+}
+nav {
+  background-color: white;
+}
+.navIcon {
+  background: linear-gradient(to right, #f97316, #ef4444);
+  color: white;
+  font-size: 22px;
+  width: 52px;
+  height: 52px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+}
+.navAddress {
+  font-weight: 700;
+  margin-bottom: 0 !important;
+}
+.navParagraph {
+  color: #6a7282;
+  font-size: 14px;
+  margin-bottom: 0 !important;
+}
+.navIcons {
+  font-size: 20px;
+  padding: 15px !important;
+  padding-bottom: 2px;
+  border-radius: 50%;
+  color: #4a5565;
+  transition: all 0.2s;
+  cursor: pointer;
+}
+.navIcons:hover {
+  color: var(--colorParent);
+}
+.navImage {
+  width: 40px;
+  height: 40px;
+  border: 1px solid #ffb86a;
+  border-radius: 50%;
+  cursor: pointer;
+}
+.navContentRight {
+  margin-right: 65px !important;
+}
+
+.recipe-card {
+  border-radius: 12px;
+  overflow: hidden;
+  background: white;
+}
+
+.recipe-image {
+  width: 100%;
+  height: auto;
+  max-height: 100%;
+  object-fit: cover;
+}
+.rating-box {
+  position: absolute;
+  top: 20px;
+  left: 20px;
+  background: #fff;
+  padding: 10px 15px;
+}
+.fa-clock {
+  color: #ff6900;
+}
+.bottom-info {
+  position: absolute;
+  bottom: 20px;
+  width: 90%;
+  left: 50%;
+  transform: translateX(-50%);
+  background: #fff;
+}
+
+.badge-level {
+  background: #dbfce7;
+  color: #00884d;
+  font-weight: 600;
+  padding: 6px 10px;
+}
+
+.badge-cuisine {
+  background: #dbeafe;
+  color: #1447e6;
+  font-weight: 600;
+  padding: 6px 10px;
+}
+
+.icon-btn {
+  background: #ffedd4;
+  padding: 12px 14px;
+  border-radius: 8px;
+  color: #f54900;
+  cursor: pointer;
+  transition: 0.2s;
+}
+
+.icon-btn:hover {
+  background: #ffd6a7;
+}
+
+.tabs .tab {
+  font-weight: 600;
+  color: #6a7282;
+  cursor: pointer;
+}
+.tab:hover {
+  color: #363e49;
+}
+.tabs .tab.active {
+  color: #f54900;
+  border-bottom: 2px solid #f54900;
+  padding-bottom: 4px;
+}
+
+.lighn {
+  width: 100%;
+  background-color: #c7ceda;
+  height: 1px;
+  margin-top: 30px;
+}
+
+.ingredients-box {
+  background: #fff9ec;
+  height: 300px;
+  overflow-y: auto;
+}
+.ingredients-box ol {
+  list-style: none;
+  counter-reset: item;
+  padding-left: 0;
+}
+.ingredients-list li {
+  counter-increment: item;
+  margin-bottom: 15px;
+}
+.ingredients-list li::before {
+  content: counter(item) " ";
+  font-weight: bold;
+  color: white;
+  width: 25px;
+  height: 25px;
+  background-color: var(--colorParent);
+  border-radius: 50%;
+  display: inline-block;
+  margin-right: 10px;
+  text-align: center;
+}
+.Instructions-box {
+  background: white;
+  overflow-y: auto;
+}
+.Instructions-list {
+  counter-reset: item;
+}
+
+.Instructions-list li {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  margin-bottom: 25px;
+  font-size: 18px;
+  counter-increment: item;
+}
+.Instructions-list li::before {
+  content: counter(item);
+  font-weight: bold;
+  color: white;
+  width: 55px;
+  height: 55px;
+  background-color: var(--colorParent);
+  border-radius: 30%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+}
+.alert {
+  background-color: #fef2f2;
+  border-left: 4px solid #fb2c36;
+}
+.fa-triangle-exclamation {
+  color: #fb2c36;
+}
+.change-color1 {
+  color: #9f0712;
+  font-size: 15px !important;
+}
+.change-color {
+  color: #fb2c36;
+  font-size: 13px !important;
+}
+.gradient-btn {
+  background: linear-gradient(to right, #f97316, #ef4444);
+  color: white;
+  padding: 12px 24px;
+  font-weight: 600;
+  border: none;
+  cursor: pointer;
+  font-size: 0.875rem;
+  transition: all 0.2s ease;
+}
+
+.gradient-btn:hover {
+  background: linear-gradient(to right, #ea580c, #dc2626);
+  transform: scale(1.05);
+  box-shadow: 0 5px 20px rgba(0, 0, 0, 0.2);
+}
+.nutrition-box {
+  padding-bottom: 1rem;
+}
+.boxes {
+  background-color: #f9fafb;
+  padding: 14px 19px;
+}
+
+.icon-Common-style {
+  width: 45px;
+  height: 45px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.icon-calorie {
+  color: var(--colorParent);
+  background: #ffedd4;
+}
+.icon-protein {
+  color: #155dfc;
+  background: #dbeafe;
+}
+.icon-carbohydrates {
+  color: #d08700;
+  background: #fef9c2;
+}
+.icon-fat {
+  color: #e7000b;
+  background: #ffe2e2;
+}
+.icon-fiber {
+  color: #00a63e;
+  background: #dbfce7;
+}
+.icon-Sodium {
+  color: #e60076;
+  background: #fce7f3;
+}
+.Chefs-box div {
+  background-color: #fffbeb;
+  border-left: 5px #ffba04 solid;
+}
+.Chefs-box div i {
+  color: var(--colorParent);
+  padding-right: 3px;
+}
+#ingredientBox {
+  height: 280px;
+  overflow: auto;
+}
+
+#ingredientBox {
+  overflow-y: auto;
+  overflow-x: hidden;
+  padding-top: 20px;
+  background-color: #fff9eb;
+}
+.right-panel {
+  overflow-y: scroll;
+  overflow-x: hidden;
+  height: 675px;
+}
+section::-webkit-scrollbar,
+#ingredientBox::-webkit-scrollbar {
+  width: 7px;
+}
+
+section::-webkit-scrollbar-track,
+#ingredientBox::-webkit-scrollbar-track {
+  background: #ffffff;
+  border-radius: 10px;
+}
+
+section::-webkit-scrollbar-thumb,
+#ingredientBox::-webkit-scrollbar-thumb {
+  background: #ffd2d2;
+  border-radius: 10px;
+  transition: 0.3s;
+}
+
+section::-webkit-scrollbar-thumb:hover,
+#ingredientBox::-webkit-scrollbar-thumb:hover {
+  background: #b46653;
+}
+section::-webkit-scrollbar,
+.right-panel::-webkit-scrollbar {
+  width: 7px;
+}
+
+section::-webkit-scrollbar-track,
+.right-panel::-webkit-scrollbar-track {
+  background: #ffffff;
+  border-radius: 10px;
+}
+
+section::-webkit-scrollbar-thumb,
+.right-panel::-webkit-scrollbar-thumb {
+  background: #ffd2d2;
+  border-radius: 10px;
+  transition: 0.3s;
+}
+
+section::-webkit-scrollbar-thumb:hover,
+.right-panel::-webkit-scrollbar-thumb:hover {
+  background: #b46653;
+}
+
+section::-webkit-scrollbar,
+.right-panel::-webkit-scrollbar {
+  width: 7px;
+}
+
+section::-webkit-scrollbar,
+.instruction-Box::-webkit-scrollbar {
+  width: 7px;
+}
+
+section::-webkit-scrollbar-track,
+.instruction-Box::-webkit-scrollbar-track {
+  background: #ffffff;
+  border-radius: 10px;
+}
+
+section::-webkit-scrollbar-thumb,
+.instruction-Box::-webkit-scrollbar-thumb {
+  background: #ffd2d2;
+  border-radius: 10px;
+  transition: 0.3s;
+}
+
+section::-webkit-scrollbar-thumb:hover,
+.instruction-Box::-webkit-scrollbar-thumb:hover {
+  background: #b46653;
+}
+
+section::-webkit-scrollbar,
+.right-panel::-webkit-scrollbar {
+  width: 7px;
+}
+
+#instructionBox {
+  height: 300px;
+  overflow-y: scroll;
+  overflow-x: hidden;
+}
+ol,
+ul {
+  list-style: none;
+}
+#chefsBox div {
+  background-color: #fffbeb;
+  border-left: 4px solid #ffb900;
+  padding-block: 20px !important;
+  padding-inline: 16px !important;
+  margin-block: 15px;
+}
+#chefsBox div i {
+  color: #e17100;
+}
+.handlebreak {
+  margin-left: 48px;
+}
+.change-hide {
+  display: inline-block;
+}
+
+.change-visible {
+  display: none;
+}
+
+.navIcons {
+  cursor: pointer;
+}
+
+.mobile-menu i {
+  font-size: 20px;
+}
