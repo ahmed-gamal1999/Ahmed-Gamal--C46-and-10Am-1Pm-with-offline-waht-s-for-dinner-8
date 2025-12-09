@@ -37,7 +37,7 @@ let quotes = [
     timePrep: "30 min",
     timeCook: "12 min",
     numberPeople: "2 people",
-    photo: "./img/pizza.JPG",
+    photo: "./imgUpdate/pizza.JPG",
     rating: "4.7",
     review: "(389 reviews)",
     recipes: `<ol class="m-0 ingredients-list">
@@ -102,7 +102,7 @@ let quotes = [
     timePrep: "30 min",
     timeCook: "25 min",
     numberPeople: "4 people",
-    photo: "img/photo.jpg",
+    photo: "./imgUpdate/photo.jpg",
     rating: "4.9",
     review: "(1000 reviews)",
     recipes: `<ol class="m-0 ingredients-list">
@@ -167,7 +167,7 @@ let quotes = [
     timePrep: "25 min",
     timeCook: "15 min",
     numberPeople: "3 people",
-    photo: "./img/shawrma.JPEG",
+    photo: "./imgUpdate/shawrma.JPEG",
     rating: "4.8",
     review: "(510 reviews)",
     recipes: `<ol class="m-0 ingredients-list">
@@ -232,7 +232,7 @@ let quotes = [
     timePrep: "20 min",
     timeCook: "10 min",
     numberPeople: "2 people",
-    photo: "img/burger.jpg",
+    photo: "./imgUpdate/burger.jpg",
     rating: "4.5",
     review: "(300 reviews)",
     recipes: `<ol class="m-0 ingredients-list">
@@ -297,7 +297,7 @@ let quotes = [
     timePrep: "20 min",
     timeCook: "20 min",
     numberPeople: "4 people",
-    photo: "./img/pasta.jpg",
+    photo: "./imgUpdate/pasta.jpg",
     rating: "4.6",
     review: "(275 reviews)",
     recipes: `<ol class="m-0 ingredients-list">
@@ -362,7 +362,7 @@ let quotes = [
     timePrep: "10 min",
     timeCook: "0 min",
     numberPeople: "2 people",
-    photo: "./img/salad.jpg",
+    photo: "./imgUpdate/salad.jpg",
     rating: "4.3",
     review: "(210 reviews)",
     recipes: `<ol class="m-0 ingredients-list">
@@ -427,7 +427,7 @@ let quotes = [
     timePrep: "20 min",
     timeCook: "10 min",
     numberPeople: "3 people",
-    photo: "img/shrimp.jpg",
+    photo: "./imgUpdate/shrimp.jpg",
     rating: "4.6",
     review: "(260 reviews)",
     recipes: `<ol class="m-0 ingredients-list">
@@ -492,7 +492,7 @@ let quotes = [
     timePrep: "15 min",
     timeCook: "20 min",
     numberPeople: "2 people",
-    photo: "img/chicken.jpg",
+    photo: "./imgUpdate/chicken.jpg",
     rating: "4.4",
     review: "(190 reviews)",
     recipes: `<ol class="m-0 ingredients-list">
@@ -557,7 +557,7 @@ let quotes = [
     timePrep: "10 min",
     timeCook: "0 min",
     numberPeople: "1 person",
-    photo: "img/tuna.jpg",
+    photo: "./imgUpdate/tuna.jpg",
     rating: "4.2",
     review: "(140 reviews)",
     recipes: `<ol class="m-0 ingredients-list">
@@ -623,7 +623,7 @@ let quotes = [
     timePrep: "15 min",
     timeCook: "10 min",
     numberPeople: "3 people",
-    photo: "./img/veggie.jpg",
+    photo: "./imgUpdate/veggie.jpg",
     rating: "4.5",
     review: "(220 reviews)",
     recipes: `<ol class="m-0 ingredients-list">
