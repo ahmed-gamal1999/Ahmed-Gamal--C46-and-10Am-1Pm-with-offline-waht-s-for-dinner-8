@@ -440,3 +440,11 @@ ul {
 .mobile-menu i {
   font-size: 20px;
 }
+.warning-box {
+  background-color: #fef2f2;
+  border-left: 4px solid red;
+  color: red;
+}
+.warning-box i {
+  font-size: 18px;
+}

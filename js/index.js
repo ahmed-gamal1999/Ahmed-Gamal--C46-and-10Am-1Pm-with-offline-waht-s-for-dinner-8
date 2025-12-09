@@ -19,6 +19,15 @@ let instructionBox = document.getElementById("instructionBox");
 let nutritionBox = document.getElementById("nutritionBox");
 let chefsBox = document.getElementById("chefsBox");
 
+let warningBox = document.getElementById("warningBox");
+let mealsWithWarning = [
+  "Koshary",
+  "Veggie Stir Fry",
+  "Fried Shrimp",
+  "Beef Burger",
+  "Margherita Pizza",
+];
+
 let activeTab = "ingredientsSelect";
 let currentQuote;
 let hamburger = document.getElementById("hamburger");
@@ -696,9 +705,13 @@ function generate() {
   photoHero.setAttribute("src", currentQuote.photo);
   rating.innerHTML = currentQuote.rating;
   review.innerHTML = currentQuote.review;
-
   tabsSelect(activeTab);
   window.scrollTo({ top: 0, behavior: "smooth" });
+  if (mealsWithWarning.includes(currentQuote.name)) {
+    warningBox.classList.remove("d-none");
+  } else {
+    warningBox.classList.add("d-none");
+  }
 }
 
 function tabsSelect(tab) {
