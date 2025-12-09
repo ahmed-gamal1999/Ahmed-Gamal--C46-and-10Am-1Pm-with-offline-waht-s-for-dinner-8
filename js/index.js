@@ -241,7 +241,7 @@ let quotes = [
     timePrep: "20 min",
     timeCook: "10 min",
     numberPeople: "2 people",
-    photo: "./imgUpdate/burger.jpg",
+    photo: "./imgUpdate/burger.JPG",
     rating: "4.5",
     review: "(300 reviews)",
     recipes: `<ol class="m-0 ingredients-list">
@@ -306,7 +306,7 @@ let quotes = [
     timePrep: "20 min",
     timeCook: "20 min",
     numberPeople: "4 people",
-    photo: "./imgUpdate/pasta.jpg",
+    photo: "./imgUpdate/pasta.JPG",
     rating: "4.6",
     review: "(275 reviews)",
     recipes: `<ol class="m-0 ingredients-list">
@@ -371,7 +371,7 @@ let quotes = [
     timePrep: "10 min",
     timeCook: "0 min",
     numberPeople: "2 people",
-    photo: "./imgUpdate/salad.jpg",
+    photo: "./imgUpdate/Salad.JPG",
     rating: "4.3",
     review: "(210 reviews)",
     recipes: `<ol class="m-0 ingredients-list">
@@ -436,7 +436,7 @@ let quotes = [
     timePrep: "20 min",
     timeCook: "10 min",
     numberPeople: "3 people",
-    photo: "./imgUpdate/shrimp.jpg",
+    photo: "./imgUpdate/shrimp.JPG",
     rating: "4.6",
     review: "(260 reviews)",
     recipes: `<ol class="m-0 ingredients-list">
@@ -501,7 +501,7 @@ let quotes = [
     timePrep: "15 min",
     timeCook: "20 min",
     numberPeople: "2 people",
-    photo: "./imgUpdate/chicken.jpg",
+    photo: "./imgUpdate/Chicken.JPG",
     rating: "4.4",
     review: "(190 reviews)",
     recipes: `<ol class="m-0 ingredients-list">
@@ -566,7 +566,7 @@ let quotes = [
     timePrep: "10 min",
     timeCook: "0 min",
     numberPeople: "1 person",
-    photo: "./imgUpdate/tuna.jpg",
+    photo: "./imgUpdate/tuna.JPG",
     rating: "4.2",
     review: "(140 reviews)",
     recipes: `<ol class="m-0 ingredients-list">
@@ -624,7 +624,6 @@ let quotes = [
             </div>`,
   },
   {
-    //asddddddddddddddddddddddddd
     name: "Veggie Stir Fry",
     desc: "Quick and colorful vegetable stir fry",
     bLevel: "Easy",
@@ -632,7 +631,7 @@ let quotes = [
     timePrep: "15 min",
     timeCook: "10 min",
     numberPeople: "3 people",
-    photo: "./imgUpdate/veggie.jpg",
+    photo: "./imgUpdate/Veggie.JPG",
     rating: "4.5",
     review: "(220 reviews)",
     recipes: `<ol class="m-0 ingredients-list">
